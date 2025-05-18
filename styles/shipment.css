@@ -1,0 +1,183 @@
+/* Container styles remain the same */
+.shipment-container {
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* margin: 40px; */
+ 
+}
+
+
+
+.shipment-container h2 {
+  color: var(--white);
+  font-size:35px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: -20px;
+}
+
+
+
+
+.shipment-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 🔍 Search box */
+.search-boxe {
+  position: relative;
+  width: 250px;
+  margin-left: -40px;
+  margin-right: 550px;
+  margin-bottom: -10px;
+}
+
+.search-boxe input {
+  width: 100%;
+  padding: 0.5rem 0.75rem 0.5rem 2.25rem;
+  font-size: 1rem;
+  border: 1px solid var(--tab);
+  border-radius: 8px;
+  outline: none;
+  background-color: var(--white);
+}
+
+.search-iconn {
+  position: absolute;
+  top: 45%;
+  left: 0.75rem;
+  transform: translateY(-50%);
+  color: var(--input);
+  pointer-events: none;
+}
+
+.filteer-select {
+  padding: 8px 12px 8px 30px;
+  border: 1px solid var(--tab);
+  border-radius: 6px;
+  font-size: 14px;
+  width: 70%;
+  margin-right:-15px ;
+  margin-left: 70px;
+  margin-bottom: -10px;
+  /* min-width: 220px; */
+}
+
+
+.inputt-icon {
+  position: absolute;
+  top: 70%;
+  left: 78px;
+  font-size: 15px;
+  transform: translateY(-50%);
+  color: var(--input);
+  pointer-events: none;
+}
+
+
+
+
+
+
+
+/* Table styles */
+.shippy table {
+  width: 80%;
+  margin-left: -40px;
+  margin-right: 0px;
+  background-color: var(--white);
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+ th,
+td {
+  padding: 13px;
+  text-align: left;
+  border: 1px solid var(--tab);
+}
+
+.shippy th {
+  color:var(--white);
+  background-color: var(--four);
+  font-weight: bold;
+  width: 4%;
+}
+.no-results{
+  color: var(--white);
+}
+
+.shippy tr:hover {
+  background-color: var(--white);
+}
+
+/* Status icons */
+.status-icon {
+  margin-right: 0.5rem;
+}
+
+/* Status color codes */
+.status-delivered {
+  color: var(--in);
+  font-weight: 600;
+}
+
+.status-intransit {
+  color:var(--del);
+  font-weight: 600;
+}
+
+.status-delayed {
+  color: var(--low);
+  font-weight: 600;
+}
+
+.status-cancelled {
+  color: var(--out);
+  font-weight: 600;
+}
+
+
+.paginationS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  /* position: absolute;
+  right: 25%; */
+  gap:25px;
+  
+}
+
+.paginationS button {
+  background: transparent;
+  border: none;
+  padding: 8px 10px;
+  cursor: pointer;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.paginationS button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.paginationS .active-page {
+  background-color: var(--four );
+  width: 25px; 
+  height: 25px;
+  border-radius: 50%;
+  padding: 10px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}

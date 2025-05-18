@@ -1,0 +1,415 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  color: var(--black);
+  margin-left: 300px;
+}
+
+.dashboard-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--white);
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.card1 {
+  background: var(--blue2);
+  padding: 20px;
+  flex: 1;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--white);
+  min-width: 100px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.374);
+  text-align: center;
+}
+
+.card1 h2 {
+  font-size: 20px;
+  color: var(--white);
+}
+
+.card2 {
+  background:var(--blue1); /* green shades */
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--white);
+  flex: 1;
+  min-width: 100px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card2 h2 {
+  font-size: 20px;
+  color: var(--white);
+}
+
+.card3 {
+  background:var(--blue3) ; /* orange shades */
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--white);
+  flex: 1;
+  margin-left: 0px;
+  min-width: 100px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card3 h2 {
+  font-size: 20px;
+  color: var(--white);
+}
+
+.card4 {
+  background:var(--blue4); /* purple shades */
+  padding: 20px;
+  flex: 1;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--white);
+  min-width: 100px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card4 h2 {
+  font-size: 20px;
+  color: var(--white);
+}
+
+
+.charts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* width: 70%; */
+}
+
+.chart-card1 {
+  background: var(--white);
+  color: var(--black);
+  padding: 20px;
+  position: absolute;
+  flex: 1;
+  min-width: 300px;
+  width: 45%;
+  height: 48%;
+  margin-right: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.411);
+}
+
+.chart-card2 {
+  /* background: rgb(0, 0, 0); */
+  position: absolute;
+  top: 100%;
+  padding: 10px 20px;
+  flex: 1;
+  min-width: 300px;
+  width: 75%;
+  height: 50%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.445);
+}
+
+.chart-card1 h3{
+  margin: 0px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.chart-card2 h3{
+  margin: 0px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.chart-card3 h3{
+  margin-top: -10px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.chart-card3 {
+  background: var(--white);
+  position: absolute;
+  right: 20px;
+  padding: 20px;
+  flex: 1;
+  width: 25%;
+  height: 350px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.chart-card3 canvas {
+  max-width: 90% !important;
+  height: 300px !important;
+  margin-left: 40px;
+}
+
+.chart-card1 canvas {
+  max-width: 100% !important;
+  width: 120% !important;
+  height: 300px !important;
+}
+
+/* Bar chart size adjustment */
+.chart-card2 canvas {
+  max-width: 100% !important;
+  width: 100% !important;
+  height: 280px !important;
+ 
+}
+
+.timeframe-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  /* margin-top: -60px; */
+  width: 100px;
+}
+
+.timeframe-buttons button {
+  background-color: var(--three);
+  color: var(--white);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.timeframe-buttons button.active {
+  background-color:var(--four); /* Pink like your sample */
+}
+
+.timeframe-buttons button:hover {
+  background-color: var(--tab);
+}
+
+.recent-customers {
+  background: var(--white);
+  padding: 20px;
+  margin-top: 850px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.recent-customers h3 {
+  margin-bottom: 20px;
+  color: var(--black);
+  margin-top: 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.recent-customers-table {
+  width: 100%;
+  border-collapse: collapse;
+
+}
+
+.recent-customers-table th,
+.recent-customers-table td {
+  border: 1px solid var(--tab);
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.recent-customers-table th {
+  background-color: var(--four);
+  color: var(--white);
+}
+
+/* .recent-customers-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.recent-customers-table tr:hover {
+  background-color: #f1f1f1;
+} */
+
+.notification-bell {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  color: var(--black);
+}
+
+.notification-bell svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--black);
+}
+
+.notification-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: red;
+  color: var(--white);
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 12px;
+  min-width: 20px;
+  text-align: center;
+  line-height: 1;
+  pointer-events: none;
+}
+
+/* .dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 20px;
+} */
+
+.profile-icon {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Profile popup styles */
+.profile-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.profile-popup {
+  background-color: rgb(4, 13, 30);
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 320px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  text-align: center;
+  position: relative;
+}
+
+.profile-popup-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.profile-popup label {
+  display: block;
+  color: var(--white);
+  margin: 10px 0 5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.editer{
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin:0px 70px;
+}
+
+.edit-prof
+{
+  padding: 8px 20px;
+  border-radius: 6px;
+  background-color: var(--del1);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+
+ 
+}
+
+.can-prof
+{
+  padding: 8px 20px;
+  border-radius: 6px;
+  background-color: var(--cancel);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+
+}
+.profile-popup input[type="text"] {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--tab);
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.profile-popup h2, .profile-popup p{
+  color: var(--white);
+}
+
+.profile-popup-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-popup-buttons button {
+  padding: 8px 20px;
+  border-radius: 6px;
+  background-color: var(--black);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.profile-popup-buttons button:first-child {
+  background-color: var(--in);
+  color: var(--white);
+}
+
+.profile-popup-buttons button:last-child {
+  background-color: var(--add);
+  color: var(--white);
+}

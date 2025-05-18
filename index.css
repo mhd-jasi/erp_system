@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root{
+  --one:#040e13;
+  --two:#11212D;
+  --two1:#1a2f3f;
+  --two2:#0a101e;
+  --three:#253745;
+  --four:#4D96A6;
+  --four1:#2f6773;
+  --five:#9BA8AB;
+  --six:#CCD0CF;
+  --white:#ffffff;
+  --black:#000000;
+  --Lblack:#0000004e;
+  --add:#e5374e;
+  --add1:#90323e;
+  --cancel:#0b601e;
+  --cancel1:#0d4118;
+  /* --page:#00ff3c; */
+  --in:green;
+  --low:orange;
+  --out:red;
+  --input:#888;
+  --tab:#bebebe ;
+  --del:#0066cc;
+  --del1:#004c99;
+  --ret:#962f09;
+  --pro:purple;
+  --awit:#ffcc00;
+  --blue1: linear-gradient(135deg,#2b5968, #183e5f); /* deep night sky */
+  --blue2: linear-gradient(135deg, #334f83, #1d3d74);          /* twilight blue */
+  --blue3: linear-gradient(135deg, #23385e, #243b55);          /* spacey dark */
+  --blue4: linear-gradient(135deg, #09203f, #375266);          /* cool steel blue */
+
+
+
+}

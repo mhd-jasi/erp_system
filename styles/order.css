@@ -1,0 +1,214 @@
+.order-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-right: 20px;
+}
+.order-container h2{
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  font-size:35px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.order-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+.order-container th, td {
+  border: 1px solid var(--tab);
+  padding: 10px;
+  text-align: left;
+}
+.order-container th {
+  background-color: var(--four);
+  color: var(--white);
+}
+
+
+/* Order Header */
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+
+
+.order-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 250px; 
+  border: 1px solid var(--tab);
+  border-radius: 5px;
+  overflow: hidden;
+  background:var(--white);
+  margin-right: 70%;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  color: var(--input);
+  font-size: 14px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 8px 30px 8px 35px; 
+  border: none;
+  outline: none;
+  text-align: center;
+  background-color: transparent;
+  font-size: 14px;
+  margin: 0;
+}
+
+
+
+.filterr-select {
+  padding: 8px 12px 8px 30px;
+  border: 1px solid var(--tab);
+  border-radius: 6px;
+  font-size: 14px;
+width: 100%;
+  /* margin-right:-100px ; */
+  /* min-width: 220px; */
+}
+
+.input-icon-groupp {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+/* .filter-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #fff;
+} */
+
+/* Filter Icon Inside */
+.input-icon{
+  position: absolute;
+  left: 10px;
+  color: var(--input);
+  font-size: 14px;
+}
+
+
+/* Payment Status Colors */
+.status-paid {
+  color: var(--in);
+  font-weight: bold;
+}
+
+.status-pending {
+  color: var(--low);
+  font-weight: bold;
+}
+
+.status-failed {
+  color: var(--out);
+  font-weight: bold;
+}
+
+.status-awaiting {
+  color: var(--awit); /* Yellow */
+  font-weight: bold;
+}
+
+.status-unpaid {
+  color: var(--four);
+  font-weight: bold;
+}
+
+/* Order Status Colors */
+.status-shipped {
+  color:var(--del);
+  font-weight: bold;
+}
+
+.status-processing {
+  color: var(--pro);
+  font-weight: bold;
+}
+
+.status-cancelled {
+  color:var(--out);
+  font-weight: bold;
+}
+
+/* .status-pending {
+  color: var(--low);
+  font-weight: bold;
+} */
+
+.status-returned {
+  color:var(--ret); /* OrangeRed */
+  font-weight: bold;
+}
+
+.status-refunded {
+  color: var(--del); 
+  font-weight: bold;
+}
+
+/* Fix Icon Alignment */
+.status-icon {
+  margin-right: 5px;
+}
+
+.paginationO {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  /* position: absolute;
+  right: 25%; */
+  gap:25px;
+  
+}
+
+.paginationO button {
+  background: transparent;
+  border: none;
+  padding: 8px 10px;
+  cursor: pointer;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.paginationO button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.paginationO .active-page {
+  background-color: var(--four);
+  width: 25px; 
+  height: 25px;
+  border-radius: 50%;
+  padding: 10px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
